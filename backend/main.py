@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 
 from fastapi.middleware.cors import CORSMiddleware
+from database.connection import engine
+from database.connection import Base
 
 from routers.todo_router import router as todo_router
 from routers.auth_router import router as auth_router
@@ -8,6 +10,8 @@ from routers.auth_router import router as auth_router
 
 app = FastAPI()
 
+
+Base.metadata.create_all(bind=engine)
 
 app.add_middleware(
     CORSMiddleware,
