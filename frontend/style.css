@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #0f172a;
+    color: white;
+    font-family: Arial;
+}
+
+.container{
+    width: 450px;
+    margin: 50px auto;
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+}
+
+button{
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.input-area{
+    display: flex;
+    gap: 10px;
+}
+
+.input-area input{
+    flex: 1;
+}
+
+li{
+    list-style: none;
+    background: #334155;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.logout-btn{
+    width: 100%;
+    background: crimson;
+    color: white;
+}
+
+.empty{
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0.7;
+}
