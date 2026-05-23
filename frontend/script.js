@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:8000"
+const API_URL = "https://todo-fastapi-6u5x.onrender.com"
 
 const token = localStorage.getItem("token")
 
